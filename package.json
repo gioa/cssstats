@@ -30,6 +30,7 @@
     "gatsby-source-filesystem": "^2.1.6",
     "gatsby-theme-documentation": "^0.0.22",
     "get-query-param": "^2.0.3",
+    "gulp-merge-json": "^2.0.0",
     "humanize-plus": "^1.8.2",
     "is-url": "^1.2.4",
     "isomorphic-unfetch": "^3.0.0",
