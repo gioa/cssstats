@@ -35,9 +35,9 @@ for f in Path('./JSON').glob("*.json"):             #here you will loop over mul
 				dict_merge[k].append(v)
 
 for k, v in dict_merge.items():
-	v_2= list(itertools.chain(*v))
-	# print (k, v_2)
-	dict_merge[k] = v_2
+	v_2= list(itertools.chain(*v))	
+	dict_merge[k] = list(set(v_2))
+	print (k, dict_merge[k])
 
 with open("merged_file.json", "w") as outfile:    #filling the resultant file with Jason content
      #json.dump(json.dumps(dict_merge, default=set_default), outfile)                 #json.dump will fill output file with merged data
